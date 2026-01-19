@@ -5,10 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Techwave</title>
     
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="tailwind.css">
 </head>
-<body class="font-inter">
+<body class="font-inter body-bg">
+    <header class="body-bg">
+        <nav class="flex max-w-[1200px] mx-auto justify-between items-center py-6 px-4">
+            <!-- logo -->
+            <h1 class="text-5xl text-[#FFFFFF]">Tech<span class="color-gradient-1">wave</span></h1>
+            <!-- navigation -->
+                <ul class="hidden md:flex gap-8 text-[#FFFFFF] font-medium">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Episodes</a></li>
+                    <li><a href="#">Host</a></li>
+                </ul>
+            <!-- Header Subscribe button -->
+               
+                <button class="hidden md:block w-36 text-white p-3 rounded-3xl linear-gradient-1">Subscribe</button>
 
-    
+                <!-- mobile button  -->
+                <button class="md:hidden"><img src="/assets/hamburger-menu.png" alt="menu icon"> </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="relative bg-[url('/assets/hero-bg.png')] h-screen bg-cover bg-no-repeat bg-center sm:bg-top flex items-center">
+
+            <div class=" max-w-[1200px] mx-auto justify-between items-center py-6 px-4">
+
+                <img src="assets/hero-circle.png" alt="">
+                <img src="assets/microphone.png" alt="">
+
+
+                <h1 class="text-6xl text-white font-extrabold text-center">TechWave</h1>
+                <p class="text-white pt-2 text-center">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+
+                <div class="flex gap-2 mt-6 items-center justify-center">
+                    <button class="flex linear-gradient-1 text-white font-semibold p-4 rounded-4xl"><img src="assets/spotify.png" alt="" class="p-1 justify-center items-center">Listen on Spotify</button>
+                    <button class="flex"><img src="assets/message.png" alt="">Subscribe</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- about section -->
+         <section class="max-w-[1200px] mx-auto justify-between items-center py-6 px-4">
+            <h2 class="text-5xl font-bold text-white text-center pt-12">About the Podcast</h2>
+            <p class="text-center text-white pt-4">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. We break down complex topics into digestible insights, explore productivity strategies that actually work, and share stories of personal growth from industry leaders. <br> <br>Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+
+            <hr class="border-t border-gray-700 my-20">
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-12 pb-12">
+                <div><h1 class="text-[#00FF88] text-5xl font-black text-center">150K+</h1> <p class="text-white text-center mt-4">Monthly Listeners</p></div>
+                <div><h1 class="text-[#00FF88] text-5xl font-black text-center">200+</h1> <p class="text-white text-center mt-4">Episodes Published</p></div>
+                <div><h1 class="text-[#00FF88] text-5xl font-black text-center">4.9</h1> <p class="text-white text-center mt-4">Average Rating</p></div>
+                <div><h1 class="text-[#00FF88] text-5xl font-black text-center">50K+</h1> <p class="text-white text-center mt-4">Industry Experts</p></div>         
+            </div>
+
+         </section>
+
+
+
+
+    </main> 
 </body>
 </html>

@@ -6,4 +6,10 @@
     .font-inter {
         font-family: 'Inter', sans-serif;
     }
+    .body-bg {
+        background-color: #1A0B2E;
+    }
+    .linear-gradient-1 {
+        background: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
+    }
 }
