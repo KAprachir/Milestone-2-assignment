@@ -12,6 +12,11 @@
     .linear-gradient-1 {
         background: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
     }
+    .text-gradient-1 {
+        color: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
+  
+    }
 
-    
+
+
 }
